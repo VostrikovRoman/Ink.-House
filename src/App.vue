@@ -5,10 +5,10 @@
       <p style="margin-left: 10px; font-weight: bold; color: var(--green); font-size: 20px;">Ink.House</p>
     </div>
     <div class="menu_bar">
-      <p class="text menu">Репродукции</p>
-      <p class="text menu">Новинки</p>
-      <p class="text menu">О нас</p>
-      <img class="icon_menu" src="./assets/Frame217.svg">
+      <p class="text menu hover">Репродукции</p>
+      <p class="text menu hover">Новинки</p>
+      <p class="text menu hover">О нас</p>
+      <img class="icon_menu hover" src="./assets/Frame217.svg">
     </div>
   </div>
   <div class="first_screen">
@@ -167,6 +167,12 @@ body{
 .text{
   font-family: 'Raleway Light';
   color: var(--black);
+  transition: 0.5s;
+}
+.hover:hover{
+  text-shadow: black 0px 0px 10px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .bird{
   width: 50%;
@@ -184,6 +190,7 @@ body{
   border: solid 1px;
   padding: 10px 30px;
   margin-top: 40px;
+  cursor: pointer;
   transition: 0.5s;
 }
 .butt:hover{
